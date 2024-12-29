@@ -7,10 +7,10 @@
   <header>
     {{ partial "header.html" . }}
   </header>
-  <main>
+  <main id="content" class="glowbox">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
+  <footer class="glowbox">
     {{ partial "footer.html" . }}
   </footer>
 </body>

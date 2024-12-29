@@ -11,10 +11,10 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
-    <ul>
+  <nav id="navbar" class="glowbox">
+    <!-- <ul> -->
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ul>
+    <!-- </ul> -->
   </nav>
 {{- end }}
 
@@ -33,7 +33,7 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li>
+    <!-- <li> -->
       <a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
@@ -42,10 +42,10 @@ Renders a menu for the given menu ID.
         {{- end -}}
       >{{ $name }}</a>
       {{- with .Children }}
-        <ul>
+        <!-- <ul> -->
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
+        <!-- </ul> -->
       {{- end }}
-    </li>
+    <!-- </li> -->
   {{- end }}
 {{- end }}
