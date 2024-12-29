@@ -10,7 +10,7 @@ body {
   font-family: Inconsolata, monospace, sans-serif;
   margin: 1rem;
   max-width: 768px;
-  text-shadow: 0 0 10px var(--text);
+  text-shadow: 0 0 10px;
 }
 
 header {
