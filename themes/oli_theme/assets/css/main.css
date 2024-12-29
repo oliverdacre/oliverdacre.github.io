@@ -10,6 +10,7 @@ body {
   font-family: Inconsolata, monospace, sans-serif;
   margin: 1rem;
   max-width: 768px;
+  text-shadow: 0 0 10px var(--text);
 }
 
 header {
@@ -26,3 +27,7 @@ a {
   color: var(--highlight);
   text-decoration: none;
 }
+
+/* .glow {
+  text-shadow: 0 0 10px var(--text);
+} */
