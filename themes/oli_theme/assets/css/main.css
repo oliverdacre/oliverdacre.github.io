@@ -23,6 +23,6 @@ footer {
 }
 
 a {
-  color: #00e;
+  color: var(--highlight);
   text-decoration: none;
 }
