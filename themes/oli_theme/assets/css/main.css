@@ -1,7 +1,13 @@
+:root {
+  --text: white;
+  --highlight: #fdee0e;
+  --background: black;
+}
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--background);
+  font-family: Inconsolata, monospace, sans-serif;
   margin: 1rem;
   max-width: 768px;
 }
