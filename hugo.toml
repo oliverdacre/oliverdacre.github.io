@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-au'
+title = "oli's site"
+theme = 'oli_theme'
