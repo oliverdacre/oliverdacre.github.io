@@ -1,0 +1,117 @@
+:root {
+  /* gruvbox dark */
+  /* --text: #ebdbb2;
+  --background: #282828;
+  --border: #928374;
+  --link: #fe8019;
+  --link-hover: #fabd2f;
+  --highlight: #fabd2f */
+  /* --red: #cc241d;
+  --orange: #d65d0e;
+  --grey: #928374; */
+
+  /* gruvbox light */
+  /* --text: #3c3836;
+  --background: #fbf1c7;
+  --border: #928374;
+  --link: #af3a03;
+  --link-hover: #b57614;
+  --highlight: #b57614 */
+
+  /* ultradark */
+  --text: white;
+  --background: black;
+  --border: white;
+  --link: yellow;
+  --link-hover: white;
+  --highlight: yellow;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+  font-family: monospace, sans-serif;
+  /* line-height: 1.5; */
+  /* margin: 1rem; */
+  margin: 10px auto;
+  max-width: 800px;
+  text-align: justify;
+
+  /* border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); */
+  border: 1px solid var(--border);
+
+  padding: 50px;
+}
+
+header {
+  text-align: center;
+  /* border-bottom: 1px solid #222; */
+  /* margin-bottom: 1rem; */
+}
+
+#banner {
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+#banner:hover {
+  /* text-shadow: 0 0 50px; */
+  color: var(--highlight);
+}
+
+nav>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  padding: 0 0.5rem 0 0;
+  border-right: 1px solid var(--border);
+}
+
+nav>ul>li:last-child {
+  border-right: none;
+}
+
+footer {
+  /* border-top: 1px solid #222; */
+  margin-top: 3rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+::-moz-selection {
+  color: var(--background);
+  background: var(--highlight);
+}
+
+::selection {
+  color: var(--background);
+  background: var(--highlight);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* margin-top: 1.4em; */
+    border-bottom: 1px solid var(--border);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 8px 16px;
+    border: none;
+  }
+  #banner {
+    font-size: 1rem;
+  }
+}

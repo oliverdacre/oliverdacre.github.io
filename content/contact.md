@@ -1,6 +1,6 @@
 +++
 title = 'contact'
-layout = 'single_no_date'
+showthedate = false
 +++
 
 under construction
