@@ -13,9 +13,14 @@ pageRef = '/games'
 weight = 20
 
 [[menus.main]]
+name = 'portfolio'
+pageRef = '/portfolio'
+weight = 30
+
+[[menus.main]]
 name = 'contact'
 pageRef = '/contact'
-weight = 30
+weight = 40
 
 [module]
   [module.hugoVersion]

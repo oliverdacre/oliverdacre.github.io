@@ -34,7 +34,9 @@ body {
   /* line-height: 1.5; */
   /* margin: 1rem; */
   margin: 10px auto;
-  max-width: 800px;
+  /* max-width: 800px; */
+  /* max-width: 50%; */
+  max-width: 50rem;
   text-align: justify;
 
   /* border-left: 1px solid var(--border);
@@ -70,12 +72,16 @@ nav>ul {
 nav>ul>li {
   display: inline-block;
   padding: 0 8px;
-  border-right: 1px solid var(--border);
+  /* border-right: 1px solid var(--border); */
 }
 
-nav>ul>li:last-child {
-  border-right: none;
+nav a {
+  text-decoration: underline;
 }
+
+/* nav>ul>li:last-child {
+  border-right: none;
+} */
 
 footer {
   /* border-top: 1px solid #222; */
@@ -108,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 800px) {
   body {
+    max-width: 100%;
     padding: 8px 16px;
     border: none;
   }
