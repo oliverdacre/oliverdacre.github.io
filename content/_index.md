@@ -6,3 +6,5 @@ Hi, I'm Oli!
 I'm a software engineering student based in Brisbane, Australia.
 
 I work as a junior software engineer at a small software development company.
+
+![brisbane](/images/city.jpg)

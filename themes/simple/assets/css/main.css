@@ -37,7 +37,7 @@ body {
   /* max-width: 800px; */
   /* max-width: 50%; */
   max-width: 50rem;
-  text-align: justify;
+  /* text-align: justify; */
 
   /* border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
@@ -91,6 +91,7 @@ footer {
 a {
   color: var(--link);
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 a:hover {
@@ -112,6 +113,13 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid var(--border);
 }
 
+img {
+  display: block;
+  max-width: 70%;
+  /* height: auto; */
+  margin: 30px auto;
+}
+
 @media screen and (max-width: 800px) {
   body {
     max-width: 100%;
@@ -119,6 +127,9 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
   }
   #banner {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 100%;
   }
 }
