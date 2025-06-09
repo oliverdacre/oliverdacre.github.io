@@ -2,3 +2,23 @@ baseURL = 'https://oliverdacre.github.io/'
 languageCode = 'en-au'
 title = "oli's site"
 theme = 'simple'
+
+[[menus.main]]
+name = 'home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'games'
+pageRef = '/games'
+weight = 20
+
+[[menus.main]]
+name = 'portfolio'
+pageRef = '/portfolio'
+weight = 30
+
+[[menus.main]]
+name = 'contact'
+pageRef = '/contact'
+weight = 40

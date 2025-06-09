@@ -1,11 +1,11 @@
 :root {
   /* gruvbox dark */
-  /* --text: #ebdbb2;
+  --text: #ebdbb2;
   --background: #282828;
   --border: #928374;
   --link: #fe8019;
   --link-hover: #fabd2f;
-  --highlight: #fabd2f */
+  --highlight: #fabd2f;
   /* --red: #cc241d;
   --orange: #d65d0e;
   --grey: #928374; */
@@ -19,12 +19,12 @@
   --highlight: #b57614 */
 
   /* ultradark */
-  --text: white;
-  --background: black;
-  --border: white;
-  --link: yellow;
-  --link-hover: white;
-  --highlight: yellow;
+  /* --text: white; */
+  /* --background: black; */
+  /* --border: white; */
+  /* --link: yellow; */
+  /* --link-hover: white; */
+  /* --highlight: yellow; */
 }
 
 body {
