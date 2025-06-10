@@ -83,6 +83,11 @@ nav a {
   border-right: none;
 } */
 
+main {
+  margin: 0 auto;
+  width: 70%;
+}
+
 footer {
   /* border-top: 1px solid #222; */
   margin-top: 3rem;
@@ -131,5 +136,8 @@ img {
   }
   img {
     max-width: 100%;
+  }
+  main {
+    width: 100%;
   }
 }
