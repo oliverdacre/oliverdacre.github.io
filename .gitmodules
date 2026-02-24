@@ -1,0 +1,3 @@
+[submodule "static/paysplit"]
+	path = static/paysplit
+	url = https://github.com/oliverdacre/paysplit.git
