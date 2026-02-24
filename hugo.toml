@@ -3,6 +3,11 @@ languageCode = 'en-au'
 title = "oli's site"
 theme = 'simple'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [[menus.main]]
 name = 'home'
 pageRef = '/'
