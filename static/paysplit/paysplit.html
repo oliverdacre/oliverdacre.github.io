@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Split your money into customisable categories with an easy-to-use visual percentage slider.">
+        <title>PaySplit - Money Splitting Calculator</title>
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header role="banner">
+            <h1>paysplit</h1>
+            <p class="tagline">Split your money into customisable categories</p>
+        </header>
+        <main role="main">
+            <section id="pay-splitter-form" aria-label="Money splitting calculator">
+                <div class="instructions">
+                    <p><strong>How to use:</strong> Drag the white dividers between coloured segments to adjust percentages, or use arrow keys when focused on a divider. Click category names to rename them.</p>
+                </div>
+                
+                <div class="total-input">
+                    <label for="totalAmount">Total amount:</label>
+                    <input 
+                        type="number" 
+                        id="totalAmount" 
+                        step=".01" 
+                        min="0" 
+                        max="999999999" 
+                        value="1000" 
+                        placeholder="Enter total amount"
+                        aria-label="Total amount to split"
+                        aria-describedby="totalAmountHelp"
+                    >
+                    <small id="totalAmountHelp" class="help-text">Enter the total amount you want to split</small>
+                </div>
+
+                <div class="percentage-bar-container">
+                    <h3>Percentage split by category:</h3>
+                    <div class="percentage-bar" id="percentageBar" role="group" aria-label="Percentage split visualisation"></div>
+                    <div id="percentageWarning" class="warning-message" style="display: none;" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="sliders-container" id="categoriesContainer" role="list" aria-label="Category list"></div>
+
+                <div class="button-group">
+                    <button class="add-category-btn" id="addCategoryBtn" aria-label="Add new category">+ Add category</button>
+                    <button class="reset-btn" id="resetBtn" aria-label="Reset to default categories">Reset</button>
+                </div>
+            </section>
+        </main>
+        <script src="paysplit.js"></script>
+    </body>
+</html>
